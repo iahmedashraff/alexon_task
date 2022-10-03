@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1294560B9C902617A8044B78 /* Pods_Alexon_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19A4A8730815BF4F973E7E2 /* Pods_Alexon_Task.framework */; };
 		5B569D4D28EB6FC90085D503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D4C28EB6FC90085D503 /* AppDelegate.swift */; };
 		5B569D4F28EB6FC90085D503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D4E28EB6FC90085D503 /* SceneDelegate.swift */; };
 		5B569D5128EB6FC90085D503 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D5028EB6FC90085D503 /* OnboardingVC.swift */; };
 		5B569D5428EB6FC90085D503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D5228EB6FC90085D503 /* Main.storyboard */; };
 		5B569D5628EB6FD80085D503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D5528EB6FD80085D503 /* Assets.xcassets */; };
 		5B569D5928EB6FD80085D503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D5728EB6FD80085D503 /* LaunchScreen.storyboard */; };
+		5B569D6B28EB73600085D503 /* sofiapro-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D6A28EB73600085D503 /* sofiapro-light.otf */; };
+		5B569D7428EB7D600085D503 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D7228EB7D600085D503 /* Slide.xib */; };
+		5B569D7528EB7D600085D503 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D7328EB7D600085D503 /* Slide.swift */; };
+		5B569D7B28EB897E0085D503 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D7A28EB897E0085D503 /* Register.storyboard */; };
+		5B569D7E28EB89970085D503 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D7D28EB89970085D503 /* RegisterVC.swift */; };
+		5B569D8028EB994F0085D503 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D7F28EB994F0085D503 /* UIColor.swift */; };
+		5B569D8228EBA0DD0085D503 /* TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8128EBA0DD0085D503 /* TapGesture.swift */; };
+		5B569D8828EBA9AB0085D503 /* Mobile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D8728EBA9AB0085D503 /* Mobile.storyboard */; };
+		5B569D8A28EBA9CB0085D503 /* MobileCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */; };
+		5B569D8C28EBAA240085D503 /* MobileCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,19 @@
 		5B569D5528EB6FD80085D503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B569D5828EB6FD80085D503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B569D5A28EB6FD80085D503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B569D6A28EB73600085D503 /* sofiapro-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sofiapro-light.otf"; sourceTree = "<group>"; };
+		5B569D7228EB7D600085D503 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		5B569D7328EB7D600085D503 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		5B569D7A28EB897E0085D503 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		5B569D7D28EB89970085D503 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		5B569D7F28EB994F0085D503 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5B569D8128EBA0DD0085D503 /* TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGesture.swift; sourceTree = "<group>"; };
+		5B569D8728EBA9AB0085D503 /* Mobile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mobile.storyboard; sourceTree = "<group>"; };
+		5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionVC.swift; sourceTree = "<group>"; };
+		5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionController.swift; sourceTree = "<group>"; };
+		B7B17CF8083E1A64ED5ED27C /* Pods-Alexon_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alexon_Task.debug.xcconfig"; path = "Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B6B013B7B0FE4C952FD711 /* Pods-Alexon_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alexon_Task.release.xcconfig"; path = "Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task.release.xcconfig"; sourceTree = "<group>"; };
+		F19A4A8730815BF4F973E7E2 /* Pods_Alexon_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alexon_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1294560B9C902617A8044B78 /* Pods_Alexon_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4B2E719D9A98975720350E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7B17CF8083E1A64ED5ED27C /* Pods-Alexon_Task.debug.xcconfig */,
+				E6B6B013B7B0FE4C952FD711 /* Pods-Alexon_Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		16ABD079246D2A1449A162FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F19A4A8730815BF4F973E7E2 /* Pods_Alexon_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B569D4028EB6FC90085D503 = {
 			isa = PBXGroup;
 			children = (
 				5B569D4B28EB6FC90085D503 /* Alexon_Task */,
 				5B569D4A28EB6FC90085D503 /* Products */,
+				0A4B2E719D9A98975720350E /* Pods */,
+				16ABD079246D2A1449A162FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +100,11 @@
 		5B569D4B28EB6FC90085D503 /* Alexon_Task */ = {
 			isa = PBXGroup;
 			children = (
-				5B569D6428EB70750085D503 /* Model */,
-				5B569D6328EB70650085D503 /* Extension */,
-				5B569D6228EB70620085D503 /* View */,
-				5B569D6128EB705D0085D503 /* Screens */,
 				5B569D6028EB70200085D503 /* Application */,
+				5B569D6328EB70650085D503 /* Extension */,
+				5B569D6428EB70750085D503 /* Model */,
+				5B569D6128EB705D0085D503 /* Screens */,
+				5B569D6228EB70620085D503 /* View */,
 			);
 			path = Alexon_Task;
 			sourceTree = "<group>";
@@ -79,6 +123,8 @@
 		5B569D6128EB705D0085D503 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5B569D8328EBA9480085D503 /* Mobile Collection */,
+				5B569D7628EB88FC0085D503 /* Register */,
 				5B569D6528EB70930085D503 /* Onboarding */,
 			);
 			path = Screens;
@@ -87,6 +133,8 @@
 		5B569D6228EB70620085D503 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B569D7328EB7D600085D503 /* Slide.swift */,
+				5B569D7228EB7D600085D503 /* Slide.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +142,9 @@
 		5B569D6328EB70650085D503 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5B569D6928EB72F90085D503 /* Fonts */,
+				5B569D7F28EB994F0085D503 /* UIColor.swift */,
+				5B569D8128EBA0DD0085D503 /* TapGesture.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -139,6 +190,81 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5B569D6928EB72F90085D503 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D6A28EB73600085D503 /* sofiapro-light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5B569D7628EB88FC0085D503 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D7928EB89160085D503 /* View */,
+				5B569D7828EB89120085D503 /* UI */,
+				5B569D7728EB890A0085D503 /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		5B569D7728EB890A0085D503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B569D7828EB89120085D503 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D7A28EB897E0085D503 /* Register.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5B569D7928EB89160085D503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D7D28EB89970085D503 /* RegisterVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B569D8328EBA9480085D503 /* Mobile Collection */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D8528EBA95B0085D503 /* View */,
+				5B569D8628EBA95E0085D503 /* UI */,
+				5B569D8428EBA9560085D503 /* Controller */,
+			);
+			path = "Mobile Collection";
+			sourceTree = "<group>";
+		};
+		5B569D8428EBA9560085D503 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B569D8528EBA95B0085D503 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B569D8628EBA95E0085D503 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D8728EBA9AB0085D503 /* Mobile.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B569D5D28EB6FD80085D503 /* Build configuration list for PBXNativeTarget "Alexon_Task" */;
 			buildPhases = (
+				F96204EABA88F82194BFC63E /* [CP] Check Pods Manifest.lock */,
 				5B569D4528EB6FC90085D503 /* Sources */,
 				5B569D4628EB6FC90085D503 /* Frameworks */,
 				5B569D4728EB6FC90085D503 /* Resources */,
+				D0FE550E3EFF7127ADE580FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,22 +325,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B569D7428EB7D600085D503 /* Slide.xib in Resources */,
 				5B569D5928EB6FD80085D503 /* LaunchScreen.storyboard in Resources */,
+				5B569D6B28EB73600085D503 /* sofiapro-light.otf in Resources */,
 				5B569D5628EB6FD80085D503 /* Assets.xcassets in Resources */,
 				5B569D5428EB6FC90085D503 /* Main.storyboard in Resources */,
+				5B569D7B28EB897E0085D503 /* Register.storyboard in Resources */,
+				5B569D8828EBA9AB0085D503 /* Mobile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0FE550E3EFF7127ADE580FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96204EABA88F82194BFC63E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alexon_Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B569D4528EB6FC90085D503 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B569D8A28EBA9CB0085D503 /* MobileCollectionVC.swift in Sources */,
+				5B569D8C28EBAA240085D503 /* MobileCollectionController.swift in Sources */,
 				5B569D5128EB6FC90085D503 /* OnboardingVC.swift in Sources */,
+				5B569D8028EB994F0085D503 /* UIColor.swift in Sources */,
 				5B569D4D28EB6FC90085D503 /* AppDelegate.swift in Sources */,
+				5B569D7528EB7D600085D503 /* Slide.swift in Sources */,
+				5B569D8228EBA0DD0085D503 /* TapGesture.swift in Sources */,
 				5B569D4F28EB6FC90085D503 /* SceneDelegate.swift in Sources */,
+				5B569D7E28EB89970085D503 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +534,7 @@
 		};
 		5B569D5E28EB6FD80085D503 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B17CF8083E1A64ED5ED27C /* Pods-Alexon_Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,10 +544,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alexon_Task/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Onboarding;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,6 +564,7 @@
 		};
 		5B569D5F28EB6FD80085D503 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B6B013B7B0FE4C952FD711 /* Pods-Alexon_Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,10 +574,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alexon_Task/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Onboarding;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
