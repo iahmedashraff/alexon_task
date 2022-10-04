@@ -135,7 +135,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fwx-tD-0ba">
                                 <rect key="frame" x="5" y="270" width="404" height="626"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewLayout key="collectionViewLayout" id="7Y8-7v-7D8" customClass="PinterestLayout" customModule="Alexon_Task" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="7Y8-7v-7D8" customClass="collectionLayout" customModule="Alexon_Task" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchCVCell" id="1Zo-yB-d0M" customClass="SearchCVCell" customModule="Alexon_Task" customModuleProvider="target">
                                         <rect key="frame" x="99" y="0.0" width="206" height="238"/>
@@ -144,9 +144,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="206" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-Mt-Urb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-Mt-Urb">
                                                     <rect key="frame" x="10" y="10" width="186" height="218"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -158,7 +158,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="ekd-Mt-Urb" secondAttribute="bottom" constant="10" id="Bhg-qN-qlQ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="206" height="238"/>
                                         <connections>
                                             <outlet property="lblSearch" destination="ekd-Mt-Urb" id="af4-aj-GqB"/>
@@ -181,17 +181,17 @@
                                                             <rect key="frame" x="10" y="10" width="45" height="23"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EWj-gN-Id2">
-                                                                    <rect key="frame" x="2.5" y="5.5" width="40.5" height="12.5"/>
+                                                                    <rect key="frame" x="2.5" y="4" width="40" height="15.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="aa3-97-cIG">
-                                                                            <rect key="frame" x="0.0" y="2" width="8" height="8"/>
+                                                                            <rect key="frame" x="0.0" y="3.5" width="8" height="8"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="8" id="UhG-9E-CN0"/>
                                                                                 <constraint firstAttribute="height" constant="8" id="gHS-Xe-pRp"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zv-J9-sm5">
-                                                                            <rect key="frame" x="8" y="0.0" width="32.5" height="12.5"/>
+                                                                            <rect key="frame" x="8" y="0.0" width="32" height="15.5"/>
                                                                             <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="13"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -228,7 +228,7 @@
                                                             <rect key="frame" x="10" y="92" width="45" height="23"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="19Z-9W-zsS">
-                                                                    <rect key="frame" x="2.5" y="7.5" width="40" height="8"/>
+                                                                    <rect key="frame" x="2.5" y="7.5" width="40" height="8.5"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="36q-s3-L1Z">
                                                                             <rect key="frame" x="0.0" y="-0.5" width="8" height="8"/>
@@ -239,7 +239,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v07-Xy-OLc">
-                                                                            <rect key="frame" x="8" y="0.5" width="17.5" height="7"/>
+                                                                            <rect key="frame" x="8" y="0.0" width="17.5" height="8.5"/>
                                                                             <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="7"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -351,9 +351,6 @@
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

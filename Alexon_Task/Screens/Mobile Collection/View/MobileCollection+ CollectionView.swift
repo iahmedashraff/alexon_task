@@ -11,7 +11,10 @@ import UIKit
 
 extension MobileCollectionVC: UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.controller.Mobiles.count + 1
+        if self.controller.Mobiles.count > 0 {
+                    return self.controller.Mobiles.count  + 1
+                }
+                return 0
         
     }
     
@@ -23,11 +26,11 @@ extension MobileCollectionVC: UICollectionViewDelegate,UICollectionViewDataSourc
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MobileCVCell
         
-       cell.imageView.loadImage(controller.Mobiles[indexPath.row].thumbnail ?? "")
-        cell.lblTitle.text = controller.Mobiles[indexPath.row].title
-        cell.lbldescribtion.text = controller.Mobiles[indexPath.row].description
-        cell.lblPrice.text = "\(controller.Mobiles[indexPath.row].price ?? 0)"
-        cell.lblRating.text = "\(controller.Mobiles[indexPath.row].rating ?? 0.0)"
+       cell.imageView.loadImage(controller.Mobiles[indexPath.row - 1].thumbnail ?? "")
+        cell.lblTitle.text = controller.Mobiles[indexPath.row - 1].title
+        cell.lbldescribtion.text = controller.Mobiles[indexPath.row - 1].description
+        cell.lblPrice.text = "\(controller.Mobiles[indexPath.row - 1].price ?? 0)"
+        cell.lblRating.text = "\(controller.Mobiles[indexPath.row - 1].rating ?? 0.0)"
         return cell
  
     }

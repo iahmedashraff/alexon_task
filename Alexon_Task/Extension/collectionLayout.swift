@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol PinterestLayoutDelegate: AnyObject {
+protocol collectionLayoutDelegate: AnyObject {
   func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat
 }
 
-class PinterestLayout: UICollectionViewLayout {
+class collectionLayout: UICollectionViewLayout {
   // 1
-  weak var delegate: PinterestLayoutDelegate?
+  weak var delegate: collectionLayoutDelegate?
 
   // 2
   private let numberOfColumns = 2
