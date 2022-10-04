@@ -1,0 +1,6 @@
+framework module Pods_Alexon_Task {
+  umbrella header "Pods-Alexon_Task-umbrella.h"
+
+  export *
+  module * { export * }
+}

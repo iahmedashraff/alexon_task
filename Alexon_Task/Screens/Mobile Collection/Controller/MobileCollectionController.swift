@@ -25,17 +25,11 @@ class MobileCollectionController {
                     let prodact = json?["products"] as? [[String:Any]]
                     
                     for item in prodact! as [[String:Any]] {
-                        print(item)
                         let mobileModel = mobileModel(mobileAPI: item)
-                        self.Mobiles.append(mobileModel)
-                        
-                    
-                        
+                        self.Mobiles.append(mobileModel)  
                     }
-                    print(self.Mobiles[0].title)
                     success?()
-                   // print(prodact)
-                   // print(total)
+
                 }catch{
 
                     print(error.localizedDescription)

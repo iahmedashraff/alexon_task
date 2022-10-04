@@ -69,7 +69,9 @@ class MobileCollectionVC: UIViewController {
         collectionView.dataSource = self
         getMobiles()
         
-        
+        if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
+          layout.delegate = self
+        }
         
 
     }
@@ -93,3 +95,17 @@ class MobileCollectionVC: UIViewController {
     }
 
 }
+extension MobileCollectionVC: PinterestLayoutDelegate {
+  func collectionView(
+    _ collectionView: UICollectionView,
+    heightForPhotoAtIndexPath indexPath:IndexPath) -> CGFloat {
+//        if indexPath.row == 0{
+//            return 70
+//        }
+        
+        let hight = (collectionView.frame.height / 3 ) - 20
+    return hight + (indexPath.row % 2 == 0 ? 30 : 90)
+  }
+    
+}
+
