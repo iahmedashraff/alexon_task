@@ -24,6 +24,8 @@
 		5B569D8828EBA9AB0085D503 /* Mobile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B569D8728EBA9AB0085D503 /* Mobile.storyboard */; };
 		5B569D8A28EBA9CB0085D503 /* MobileCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */; };
 		5B569D8C28EBAA240085D503 /* MobileCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */; };
+		5B569D8E28EBB4CC0085D503 /* MobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8D28EBB4CC0085D503 /* MobileModel.swift */; };
+		5B569D9528EBB6440085D503 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D9428EBB6440085D503 /* ApiRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		5B569D8728EBA9AB0085D503 /* Mobile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mobile.storyboard; sourceTree = "<group>"; };
 		5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionVC.swift; sourceTree = "<group>"; };
 		5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionController.swift; sourceTree = "<group>"; };
+		5B569D8D28EBB4CC0085D503 /* MobileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileModel.swift; sourceTree = "<group>"; };
+		5B569D9428EBB6440085D503 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		B7B17CF8083E1A64ED5ED27C /* Pods-Alexon_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alexon_Task.debug.xcconfig"; path = "Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task.debug.xcconfig"; sourceTree = "<group>"; };
 		E6B6B013B7B0FE4C952FD711 /* Pods-Alexon_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alexon_Task.release.xcconfig"; path = "Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task.release.xcconfig"; sourceTree = "<group>"; };
 		F19A4A8730815BF4F973E7E2 /* Pods_Alexon_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alexon_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +146,7 @@
 		5B569D6328EB70650085D503 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5B569D9728EBB64C0085D503 /* API Manger */,
 				5B569D6928EB72F90085D503 /* Fonts */,
 				5B569D7F28EB994F0085D503 /* UIColor.swift */,
 				5B569D8128EBA0DD0085D503 /* TapGesture.swift */,
@@ -152,6 +157,7 @@
 		5B569D6428EB70750085D503 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B569D8D28EBB4CC0085D503 /* MobileModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +269,14 @@
 				5B569D8728EBA9AB0085D503 /* Mobile.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5B569D9728EBB64C0085D503 /* API Manger */ = {
+			isa = PBXGroup;
+			children = (
+				5B569D9428EBB6440085D503 /* ApiRequest.swift */,
+			);
+			path = "API Manger";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,8 +405,10 @@
 				5B569D4D28EB6FC90085D503 /* AppDelegate.swift in Sources */,
 				5B569D7528EB7D600085D503 /* Slide.swift in Sources */,
 				5B569D8228EBA0DD0085D503 /* TapGesture.swift in Sources */,
+				5B569D8E28EBB4CC0085D503 /* MobileModel.swift in Sources */,
 				5B569D4F28EB6FC90085D503 /* SceneDelegate.swift in Sources */,
 				5B569D7E28EB89970085D503 /* RegisterVC.swift in Sources */,
+				5B569D9528EBB6440085D503 /* ApiRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
