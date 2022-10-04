@@ -9,7 +9,10 @@ import Foundation
 import Alamofire
 
 class MobileCollectionController {
-    func getMobileList(success: ((apiResponse)->())?, failure: ((String)->())?, finish: (()->())?){
+    
+    var Mobiles = [mobileModel]()
+    
+    func getMobileList(success:(()->())?, error:((String)->())?){
         let url = "https://dummyjson.com/products"
         
         AF.request(url).response { response in
@@ -18,22 +21,26 @@ class MobileCollectionController {
             case .success(let data):
                 do{
                     let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any]
-                    let total = json?["total"] as? Int
+                    //let total = json?["total"] as? Int
                     let prodact = json?["products"] as? [[String:Any]]
+                    
                     for item in prodact! as [[String:Any]] {
+                        print(item)
                         let mobileModel = mobileModel(mobileAPI: item)
+                        self.Mobiles.append(mobileModel)
                         
+                    
                         
                     }
-                    print(prodact)
-                    print(total)
+                    print(self.Mobiles[0].title)
+                    success?()
+                   // print(prodact)
+                   // print(total)
                 }catch{
-                    failure?(error.localizedDescription)
 
                     print(error.localizedDescription)
                 }
             case .failure(let err):
-                failure?(err.localizedDescription)
                 print(err.localizedDescription)
             }
         }

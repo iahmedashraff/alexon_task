@@ -14,7 +14,7 @@ class MobileCollectionVC: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var btnBack: UIButton!{
         didSet{
-            btnBack.layer.cornerRadius = 30
+            btnBack.layer.cornerRadius = btnBack.layer.frame.height / 2
             btnBack.layer.shadowColor = UIColor.black.cgColor
             btnBack.layer.shadowOffset = CGSize(width: 3, height: 3)
             btnBack.layer.shadowOpacity = 0.2
@@ -28,6 +28,15 @@ class MobileCollectionVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var btnFilter: UIButton!{
+        didSet{
+            btnFilter.layer.cornerRadius = 10
+            btnFilter.layer.shadowColor = UIColor.black.cgColor
+            btnFilter.layer.shadowOffset = CGSize(width: 3, height: 3)
+            btnFilter.layer.shadowOpacity = 0.2
+            btnFilter.layer.shadowRadius = 4.0
+        }
+    }
     @IBOutlet weak var viewSearch: UIView!{
         didSet{
             viewSearch.layer.borderWidth = 3
@@ -51,17 +60,17 @@ class MobileCollectionVC: UIViewController {
             btnStores.layer.cornerRadius = 20
         }
     }
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        controller.getMobileList { response in
-            print("تم بنجاح")
-            
-        } failure: { error in
-            print("error")
-        } finish: {
-            print("Done")
-        }
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        getMobiles()
+        
+        
+        
 
     }
     
@@ -71,6 +80,13 @@ class MobileCollectionVC: UIViewController {
     
     // MARK: - Helper Functions
 
+    func getMobiles(){
+        controller.getMobileList {
+            self.collectionView.reloadData()
+        } error: { err in
+            print(err)
+        }
 
+    }
 
 }
