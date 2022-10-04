@@ -13,13 +13,16 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     // MARK: - Outlets
     @IBOutlet weak var lblErrorName: UILabel!
     @IBOutlet weak var viewName: UIView!
-    @IBOutlet weak var tfName: UITextField!
+
+    @IBOutlet weak var viewNibName: textFeildNib!
     @IBOutlet weak var lblErrorEmail: UILabel!
     @IBOutlet weak var viewEMail: UIView!
-    @IBOutlet weak var tfEMail: UITextField!
+
+    @IBOutlet weak var viewNibEmail: textFeildNib!
     @IBOutlet weak var lblErrorPassword: UILabel!
     @IBOutlet weak var viewPassword: UIView!
-    @IBOutlet weak var tfPassword: UITextField!
+
+    @IBOutlet weak var viewNibPassword: textFeildNib!
     @IBOutlet weak var btnShowPassword: UIButton!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var viewFacebook: UIView!
@@ -39,9 +42,9 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func showPasswordBtnPressed(_ sender: UIButton) {
         if(showPasswordClick == true) {
-            tfPassword.isSecureTextEntry = false
+            viewNibPassword.isSecure = false
                 } else {
-                    tfPassword.isSecureTextEntry = true
+                    viewNibPassword.isSecure = true
                 }
 
         showPasswordClick = !showPasswordClick
@@ -49,9 +52,9 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func signupBtnPressed(_ sender: UIButton) {
         if compeletfields() == true {
-            guard let name = self.tfName.text, !name.isEmpty else {return}
-            guard let email = self.tfEMail.text, !email.isEmpty else {return}
-            guard let password = self.tfPassword.text, !password.isEmpty else {return}
+            guard let name = self.viewNibName.text, !name.isEmpty else {return}
+            guard let email = self.viewNibEmail.text, !email.isEmpty else {return}
+            guard let password = self.viewNibPassword.text, !password.isEmpty else {return}
             
             let vc = UIStoryboard(name: "Mobile", bundle: nil).instantiateViewController(withIdentifier: "MobileCollectionVC") as! MobileCollectionVC
             vc.modalPresentationStyle = .fullScreen
@@ -69,15 +72,19 @@ extension RegisterVC {
         viewName.layer.borderWidth = 2
         viewName.layer.borderColor = UIColor(hexString: "#F1F1F1").cgColor
         viewName.layer.cornerRadius = 5
+        viewNibName.placeHolder = "Enter Your Full Name"
 
         viewEMail.layer.borderWidth = 2
         viewEMail.layer.borderColor = UIColor(hexString: "#F1F1F1").cgColor
         viewEMail.layer.cornerRadius = 5
+        viewNibEmail.placeHolder = "Enter Your Email"
         
 
         viewPassword.layer.borderWidth = 2
         viewPassword.layer.borderColor = UIColor(hexString: "#F1F1F1").cgColor
         viewPassword.layer.cornerRadius = 5
+        viewNibPassword.placeHolder = "Enter Your Password"
+        viewNibPassword.isSecure = true
         
         
         btnSignUp.layer.cornerRadius = 30
@@ -102,58 +109,40 @@ extension RegisterVC {
 }
 // TODO: - ErrorHandling
 extension RegisterVC {
-    func compeletfields() -> Bool {
-        var flag = true
-        if (tfName.text?.isEmpty ?? true) || (tfEMail.text?.isEmpty ?? true) || (tfPassword.text?.isEmpty ?? true) == true {
-            lblErrorName.isHidden = false
-            lblErrorName.text = NSLocalizedString("Please Enter Your Name", comment: "")
-            lblErrorName.textColor = UIColor.red
-            lblErrorEmail.isHidden = false
-            lblErrorEmail.text = NSLocalizedString("Please Enter Your Email", comment: "")
-            lblErrorEmail.textColor = UIColor.red
-            lblErrorPassword.isHidden = false
-            lblErrorPassword.text = NSLocalizedString("Please Enter Your Password", comment: "")
-            lblErrorPassword.textColor = UIColor.red
-            flag = false
-        }else{
-            lblErrorName.isHidden = true
-            lblErrorName.text = ""
-            lblErrorEmail.isHidden = true
-            lblErrorEmail.text = ""
-            lblErrorPassword.isHidden = true
-            lblErrorPassword.text = ""
+        func compeletfields() -> Bool {
+            var flag = true
+            if (viewNibName.text?.isEmpty ?? true)  == true {
+                viewNibName.lblPlaceHolder.isHidden = false
+                viewNibName.lblPlaceHolder.text = "Enter you Name"
+                viewNibName.lblPlaceHolder.textColor = UIColor.red
+                
+                flag = false
+            }else {
+                viewNibName.lblPlaceHolder.isHidden = true
+                viewNibName.lblPlaceHolder.text = ""
+            }
+            if (viewNibEmail.text?.isEmpty ?? true)  == true {
+                viewNibEmail.lblPlaceHolder.isHidden = false
+                viewNibEmail.lblPlaceHolder.text = "Enter you Email"
+                viewNibEmail.lblPlaceHolder.textColor = UIColor.red
+                
+                flag = false
+            }else {
+                viewNibEmail.lblPlaceHolder.isHidden = true
+                viewNibEmail.lblPlaceHolder.text = ""
+            }
+            if (viewNibPassword.text?.isEmpty ?? true)  == true {
+                viewNibPassword.lblPlaceHolder.isHidden = false
+                viewNibPassword.lblPlaceHolder.text = "Enter Your Passsword"
+                viewNibPassword.lblPlaceHolder.textColor = UIColor.red
+                flag = false
+            }else {
+                viewNibPassword.lblPlaceHolder.isHidden = true
+                viewNibPassword.lblPlaceHolder.text = ""
+            }
+            return flag
         }
-        if (tfName.text?.isEmpty ?? true)  == true {
-            lblErrorName.isHidden = false
-            lblErrorName.text = NSLocalizedString("Please Enter Your Name", comment: "")
-            lblErrorName.textColor = UIColor.red
-            
-            flag = false
-        }else {
-            lblErrorName.isHidden = true
-            lblErrorName.text = ""
-        }
-        if (tfEMail.text?.isEmpty ?? true)  == true {
-            lblErrorEmail.isHidden = false
-            lblErrorEmail.text = NSLocalizedString("Please Enter Your Email", comment: "")
-            lblErrorEmail.textColor = UIColor.red
-            
-            flag = false
-        }else {
-            lblErrorEmail.isHidden = true
-            lblErrorEmail.text = ""
-        }
-        if (tfPassword.text?.isEmpty ?? true)  == true {
-            lblErrorPassword.isHidden = false
-            lblErrorPassword.text = NSLocalizedString("Please Enter Your Password", comment: "")
-            lblErrorPassword.textColor = UIColor.red
-            flag = false
-        }else {
-            lblErrorPassword.isHidden = true
-            lblErrorPassword.text = ""
-        }
-        return flag
-    }
+        
 }
 
 // TODO: - Tap Gesture

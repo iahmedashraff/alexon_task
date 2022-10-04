@@ -76,6 +76,9 @@ class MobileCollectionVC: UIViewController {
     
 
     // MARK: - IBACtions
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
     
     
     // MARK: - Helper Functions

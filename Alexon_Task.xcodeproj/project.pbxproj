@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1294560B9C902617A8044B78 /* Pods_Alexon_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19A4A8730815BF4F973E7E2 /* Pods_Alexon_Task.framework */; };
 		5B136FCD28EC32DE002DB219 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B136FCC28EC32DD002DB219 /* UIImage.swift */; };
+		5B136FD128EC3EB9002DB219 /* textFeildNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B136FCF28EC3EB9002DB219 /* textFeildNib.xib */; };
+		5B136FD228EC3EB9002DB219 /* textFeildNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B136FD028EC3EB9002DB219 /* textFeildNib.swift */; };
 		5B569D4D28EB6FC90085D503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D4C28EB6FC90085D503 /* AppDelegate.swift */; };
 		5B569D4F28EB6FC90085D503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D4E28EB6FC90085D503 /* SceneDelegate.swift */; };
 		5B569D5128EB6FC90085D503 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D5028EB6FC90085D503 /* OnboardingVC.swift */; };
@@ -26,13 +28,14 @@
 		5B569D8A28EBA9CB0085D503 /* MobileCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */; };
 		5B569D8C28EBAA240085D503 /* MobileCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */; };
 		5B569D8E28EBB4CC0085D503 /* MobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D8D28EBB4CC0085D503 /* MobileModel.swift */; };
-		5B569D9528EBB6440085D503 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D9428EBB6440085D503 /* ApiRequest.swift */; };
 		5B569D9928EBC0430085D503 /* MobileCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D9828EBC0430085D503 /* MobileCVCell.swift */; };
 		5B569D9D28EBCAF80085D503 /* MobileCollection+ CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B569D9C28EBCAF80085D503 /* MobileCollection+ CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B136FCC28EC32DD002DB219 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		5B136FCF28EC3EB9002DB219 /* textFeildNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = textFeildNib.xib; sourceTree = "<group>"; };
+		5B136FD028EC3EB9002DB219 /* textFeildNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textFeildNib.swift; sourceTree = "<group>"; };
 		5B569D4928EB6FC90085D503 /* Alexon_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alexon_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B569D4C28EB6FC90085D503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B569D4E28EB6FC90085D503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		5B569D8928EBA9CB0085D503 /* MobileCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionVC.swift; sourceTree = "<group>"; };
 		5B569D8B28EBAA240085D503 /* MobileCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionController.swift; sourceTree = "<group>"; };
 		5B569D8D28EBB4CC0085D503 /* MobileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileModel.swift; sourceTree = "<group>"; };
-		5B569D9428EBB6440085D503 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		5B569D9828EBC0430085D503 /* MobileCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCVCell.swift; sourceTree = "<group>"; };
 		5B569D9C28EBCAF80085D503 /* MobileCollection+ CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileCollection+ CollectionView.swift"; sourceTree = "<group>"; };
 		B7B17CF8083E1A64ED5ED27C /* Pods-Alexon_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alexon_Task.debug.xcconfig"; path = "Target Support Files/Pods-Alexon_Task/Pods-Alexon_Task.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,15 @@
 				F19A4A8730815BF4F973E7E2 /* Pods_Alexon_Task.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B136FCE28EC3E5A002DB219 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				5B136FD028EC3EB9002DB219 /* textFeildNib.swift */,
+				5B136FCF28EC3EB9002DB219 /* textFeildNib.xib */,
+			);
+			path = Nibs;
 			sourceTree = "<group>";
 		};
 		5B569D4028EB6FC90085D503 = {
@@ -143,6 +154,7 @@
 		5B569D6228EB70620085D503 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B136FCE28EC3E5A002DB219 /* Nibs */,
 				5B569D7328EB7D600085D503 /* Slide.swift */,
 				5B569D7228EB7D600085D503 /* Slide.xib */,
 				5B569D9828EBC0430085D503 /* MobileCVCell.swift */,
@@ -153,7 +165,6 @@
 		5B569D6328EB70650085D503 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5B569D9728EBB64C0085D503 /* API Manger */,
 				5B569D6928EB72F90085D503 /* Fonts */,
 				5B569D7F28EB994F0085D503 /* UIColor.swift */,
 				5B569D8128EBA0DD0085D503 /* TapGesture.swift */,
@@ -280,14 +291,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		5B569D9728EBB64C0085D503 /* API Manger */ = {
-			isa = PBXGroup;
-			children = (
-				5B569D9428EBB6440085D503 /* ApiRequest.swift */,
-			);
-			path = "API Manger";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,6 +354,7 @@
 				5B569D7428EB7D600085D503 /* Slide.xib in Resources */,
 				5B569D5928EB6FD80085D503 /* LaunchScreen.storyboard in Resources */,
 				5B569D6B28EB73600085D503 /* sofiapro-light.otf in Resources */,
+				5B136FD128EC3EB9002DB219 /* textFeildNib.xib in Resources */,
 				5B569D5628EB6FD80085D503 /* Assets.xcassets in Resources */,
 				5B569D5428EB6FC90085D503 /* Main.storyboard in Resources */,
 				5B569D7B28EB897E0085D503 /* Register.storyboard in Resources */,
@@ -414,12 +418,12 @@
 				5B569D4D28EB6FC90085D503 /* AppDelegate.swift in Sources */,
 				5B569D7528EB7D600085D503 /* Slide.swift in Sources */,
 				5B569D9928EBC0430085D503 /* MobileCVCell.swift in Sources */,
+				5B136FD228EC3EB9002DB219 /* textFeildNib.swift in Sources */,
 				5B569D8228EBA0DD0085D503 /* TapGesture.swift in Sources */,
 				5B569D8E28EBB4CC0085D503 /* MobileModel.swift in Sources */,
 				5B569D4F28EB6FC90085D503 /* SceneDelegate.swift in Sources */,
 				5B569D9D28EBCAF80085D503 /* MobileCollection+ CollectionView.swift in Sources */,
 				5B569D7E28EB89970085D503 /* RegisterVC.swift in Sources */,
-				5B569D9528EBB6440085D503 /* ApiRequest.swift in Sources */,
 				5B136FCD28EC32DE002DB219 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

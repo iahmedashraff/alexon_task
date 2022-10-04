@@ -78,19 +78,20 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5L-ls-vwD">
                                                                         <rect key="frame" x="0.0" y="25.5" width="362" height="60"/>
                                                                         <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FDp-fy-dha">
-                                                                                <rect key="frame" x="4" y="0.0" width="358" height="60"/>
-                                                                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="name"/>
-                                                                            </textField>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFO-it-wky" customClass="textFeildNib" customModule="Alexon_Task" customModuleProvider="target">
+                                                                                <rect key="frame" x="5" y="5" width="352" height="50"/>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            </view>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <constraints>
+                                                                            <constraint firstItem="SFO-it-wky" firstAttribute="top" secondItem="Q5L-ls-vwD" secondAttribute="top" constant="5" id="5xw-H8-bwQ"/>
                                                                             <constraint firstAttribute="height" constant="60" id="DPk-X3-LLl"/>
-                                                                            <constraint firstItem="FDp-fy-dha" firstAttribute="leading" secondItem="Q5L-ls-vwD" secondAttribute="leading" constant="4" id="KPK-4V-me7"/>
-                                                                            <constraint firstItem="FDp-fy-dha" firstAttribute="top" secondItem="Q5L-ls-vwD" secondAttribute="top" id="TT6-W6-Cgf"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="FDp-fy-dha" secondAttribute="trailing" id="YpJ-Db-Jpq"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="FDp-fy-dha" secondAttribute="bottom" id="pqJ-dc-Prx"/>
+                                                                            <constraint firstItem="SFO-it-wky" firstAttribute="leading" secondItem="Q5L-ls-vwD" secondAttribute="leading" constant="5" id="JtE-fL-8rq"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="SFO-it-wky" secondAttribute="bottom" constant="5" id="fFQ-UC-Tq3"/>
+                                                                            <constraint firstItem="SFO-it-wky" firstAttribute="centerX" secondItem="Q5L-ls-vwD" secondAttribute="centerX" id="gLd-dS-fqC"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="SFO-it-wky" secondAttribute="trailing" constant="5" id="o0i-bi-eAb"/>
+                                                                            <constraint firstItem="SFO-it-wky" firstAttribute="centerY" secondItem="Q5L-ls-vwD" secondAttribute="centerY" id="vam-Ea-bGV"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
@@ -113,19 +114,15 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bW-Jt-nfw">
                                                                         <rect key="frame" x="0.0" y="25.5" width="362" height="60"/>
                                                                         <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-dU-d0A">
-                                                                                <rect key="frame" x="4" y="0.0" width="358" height="60"/>
-                                                                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
-                                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
-                                                                            </textField>
+                                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-Y0-Wem" customClass="textFeildNib" customModule="Alexon_Task" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="5" width="362" height="50"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            </view>
                                                                         </subviews>
                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="trailing" secondItem="1aI-dU-d0A" secondAttribute="trailing" id="6eZ-GW-1Yi"/>
-                                                                            <constraint firstItem="1aI-dU-d0A" firstAttribute="leading" secondItem="9bW-Jt-nfw" secondAttribute="leading" constant="4" id="Tpo-BO-bOM"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="1aI-dU-d0A" secondAttribute="bottom" id="cJc-Ay-fRq"/>
                                                                             <constraint firstAttribute="height" constant="60" id="mMl-HR-DPA"/>
-                                                                            <constraint firstItem="1aI-dU-d0A" firstAttribute="top" secondItem="9bW-Jt-nfw" secondAttribute="top" id="u3E-U0-Wsz"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
@@ -151,11 +148,10 @@
                                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJ0-Iq-Kml">
                                                                                 <rect key="frame" x="4" y="0.0" width="354" height="60"/>
                                                                                 <subviews>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W63-Eo-2Y4">
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZh-SM-ghC" customClass="textFeildNib" customModule="Alexon_Task" customModuleProvider="target">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="324" height="60"/>
-                                                                                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
-                                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                                                                    </textField>
+                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                    </view>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r81-He-Nn4">
                                                                                         <rect key="frame" x="324" y="0.0" width="30" height="60"/>
                                                                                         <constraints>
@@ -353,13 +349,13 @@
                         <outlet property="lblErrorEmail" destination="PsO-aA-QoE" id="ASd-bS-MID"/>
                         <outlet property="lblErrorName" destination="Fq7-2P-sL2" id="4bT-6w-Llo"/>
                         <outlet property="lblErrorPassword" destination="G7I-4h-2QK" id="rz8-7U-n3a"/>
-                        <outlet property="tfEMail" destination="1aI-dU-d0A" id="AI9-MP-XyD"/>
-                        <outlet property="tfName" destination="FDp-fy-dha" id="DMw-Gc-wof"/>
-                        <outlet property="tfPassword" destination="W63-Eo-2Y4" id="6Zs-cb-x6b"/>
                         <outlet property="viewEMail" destination="9bW-Jt-nfw" id="8ay-ym-y5Y"/>
                         <outlet property="viewFacebook" destination="xSv-dD-Lcg" id="5ej-Uk-25C"/>
                         <outlet property="viewGoogle" destination="GYa-VV-VSg" id="dNP-nP-zEP"/>
                         <outlet property="viewName" destination="Q5L-ls-vwD" id="Alr-eW-KvE"/>
+                        <outlet property="viewNibEmail" destination="0fx-Y0-Wem" id="nU0-CZ-Al3"/>
+                        <outlet property="viewNibName" destination="SFO-it-wky" id="ZHs-vW-LNy"/>
+                        <outlet property="viewNibPassword" destination="MZh-SM-ghC" id="vx4-25-oa1"/>
                         <outlet property="viewPassword" destination="ORd-fg-MrB" id="khv-Fb-d9I"/>
                     </connections>
                 </viewController>
